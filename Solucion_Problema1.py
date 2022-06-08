@@ -1,6 +1,6 @@
-import pandas as dp
+import pandas as pd
 
 ventas = {'Mes': ['Enero', 'febrero', 'Marzo', 'Abril'], 'Ventas': [30500, 35600, 28300, 33900]}
 
-df = dp.DataFrame(ventas)
+df = pd.DataFrame(ventas)
 print(df)
