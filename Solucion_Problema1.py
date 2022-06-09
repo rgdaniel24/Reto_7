@@ -1,10 +1,17 @@
 import pandas as pd
 
-def creardataframe():
-  ventas = {'Mes': ['Enero', 'febrero', 'Marzo', 'Abril'], 'Ventas': [30500, 35600, 28300, 33900],'Gastos': [22000, 23400, 18100, 20700]}
-  df = pd.DataFrame(ventas)
-  print(df)
-  return df
+e = ['Enero', 30500, 22000]
+f = ['Febrero', 35600, 23400]
+m = ['Marzo', 28300, 18100]
+a = ['Abril', 33900, 20700]
 
-def dataframeb():
-  balance = 'Ventas'-'Gastos'
+ventas = [e, f, m, a]
+
+def creardataframe():
+  ventas1 =pd.DataFrame(ventas, 
+            columns = ['Mes', 'Ventas', 'Gastos'])
+  print(ventas1)
+  return ventas1
+
+def creardataframeb():
+  balance = ventas1['Gastos']
