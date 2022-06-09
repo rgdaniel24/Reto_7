@@ -1,6 +1,10 @@
 import pandas as pd
 
-ventas = {'Mes': ['Enero', 'febrero', 'Marzo', 'Abril'], 'Ventas': [30500, 35600, 28300, 33900]}
+def creardataframe():
+  ventas = {'Mes': ['Enero', 'febrero', 'Marzo', 'Abril'], 'Ventas': [30500, 35600, 28300, 33900],'Gastos': [22000, 23400, 18100, 20700]}
+  df = pd.DataFrame(ventas)
+  print(df)
+  return df
 
-df = pd.DataFrame(ventas)
-print(df)
+def dataframeb():
+  balance = 'Ventas'-'Gastos'
